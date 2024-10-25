@@ -4,7 +4,7 @@
 {% block content %}
 <div class="border-b border-grey-lighter py-8 lg:py-10">
     <div>
-        {% image page.author_image fill-150x150 class="h-150 w-150" %}
+        {% image page.author_image fill-170x170 class="h-170 w-170" %}
     </div>
 
     <h1 class="pt-4 font-body text-4xl font-semibold text-primary dark:text-white md:text-5xl lg:text-6xl">
@@ -24,7 +24,7 @@
 
 <div class="border-b border-grey-lighter py-8 lg:py-10">
     <div class="flex items-center pb-6">
-        <img src="{% static 'img/icon-story.png' %}" alt="icon story" />
+        <img src="{% static 'img/icon-story.png' %}" alt="icon story" style="width: 100px; height: 100px;" />
         <h3 class="ml-3 font-body text-2xl font-semibold text-primary dark:text-white">
             {{ page.my_story_title }}
         </h3>
@@ -38,7 +38,7 @@
 
 <div class="py-8 lg:py-10">
     <div class="flex items-center pb-6">
-        <img src="{% static 'img/icon-post.png' %}" alt=""/>
+        <img src="{% static 'img/icon-blog.png' %}" alt="" style="width: 100px; height: 100px;" />
         <h3 class="ml-3 font-body text-2xl font-semibold text-primary dark:text-white">
             Blog posts
         </h3>
@@ -56,7 +56,7 @@
 
 <div class="pb-8 lg:pb-10">
     <div class="flex items-center pb-6">
-        <img src="{% static 'img/icon-project.png' %}" alt="icon story"/>
+        <img src="{% static 'img/icon-project.png' %}" alt="icon story" style="width: 100px; height: 100px;"/>
         <h3 class="ml-3 font-body text-2xl font-semibold text-primary dark:text-white">
             Mes Projets
         </h3>

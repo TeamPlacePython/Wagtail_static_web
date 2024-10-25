@@ -4,7 +4,7 @@
 {% block content %}
   <div class="py-4 lg:py-10">
       <div>
-        <img src="{% static 'img/icon-uses.png' %}" alt="icon uses"/>
+        <img src="{% static 'img/icon-skills.png' %}" alt="icon skills" style="width: 100px; height: 100px;" />
       </div>
       <h1 class="pt-4 font-body text-4xl font-semibold text-primary dark:text-white md:text-5xl lg:text-6xl">
         {{ page.title }}
@@ -13,11 +13,11 @@
         {{ page.html_subtitle|safe }}
       </div>
 
-      <div class="py-4 lg:py-10">
+      <div class="py-8 lg:py-10">
         {% include 'includes/carrousel_double.html' %}
       </div>
 
-      <div class="pt-16 lg:pt-20 prose dark:prose-dark md:text-2xl lg:text-3xl">
+      <div class="pt-8 lg:pt-10 prose dark:prose-dark md:text-1xl lg:text-3xl">
           {% include_block page.body %}
       </div>
   </div>

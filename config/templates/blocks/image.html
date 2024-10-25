@@ -1,6 +1,18 @@
+{% comment %} {% load wagtailimages_tags %} {% endcomment %}
+
+{% comment %} {% image self fill-800x440 as img %}
+
+<img src="{{ img.url }}" alt="" class="w-full h-auto my-2 rounded-lg" style="border-radius: 1em;"> {% endcomment %}
+
 {% load wagtailimages_tags %}
 
-{% image self fill-800x440 as img %}
-
-<img src="{{ img.url }}" alt="" class="w-full h-auto my-2 rounded-lg" style="border-radius: 1em;">
-
+{% image self original as img %}
+{% with width=img.width height=img.height %}
+    {% if width > height %}
+        <!-- Paysage : plein écran -->
+        <img src="{{ img.url }}" alt="" class="w-full h-auto my-2 rounded-lg" style="border-radius: 1em; width: 100%; height: auto;">
+    {% else %}
+        <!-- Portrait : réduction de la taille avec une largeur limitée -->
+        <img src="{{ img.url }}" alt="" class="my-2 rounded-lg mx-auto" style="border-radius: 1em; max-width: 25%; height: auto;">
+    {% endif %}
+{% endwith %}

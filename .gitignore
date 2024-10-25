@@ -1,6 +1,6 @@
 # Django project
 /media/
-# *.sqlite3
+*.sqlite3
 
 # Python and others
 __pycache__
@@ -9,6 +9,7 @@ __pycache__
 *.swp
 /venv/
 .venv/
+.env
 /tmp/
 /.vagrant/
 /Vagrantfile.local

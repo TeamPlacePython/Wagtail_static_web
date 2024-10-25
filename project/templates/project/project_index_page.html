@@ -4,7 +4,7 @@
 {% block content %}
 <div class="py-8 lg:py-10">
   <div>
-    <img src="{% static 'img/icon-project.png' %}" alt="icon project"/>
+    <img src="{% static 'img/icon-project.png' %}" alt="icon project" style="width: 100px; height: 100px;" />
   </div>
 
   <h1 class="pt-5 font-body text-4xl font-semibold text-primary dark:text-white md:text-5xl lg:text-6xl">
@@ -29,7 +29,7 @@
       {% if project.has_previous %}
         <a href="?page={{ project.previous_page_number }}" class="group ml-3 flex cursor-pointer items-center border-2 border-primary px-3 py-1 font-body font-medium text-primary transition-colors hover:border-secondary hover:text-secondary dark:border-green-light dark:text-white dark:hover:border-secondary dark:hover:text-secondary">
           <i class="bx bx-left-arrow-alt ml-1 text-primary transition-colors group-hover:text-secondary dark:text-white"></i>
-          Précedent
+          Précédent
         </a>
       {% endif %}
 
