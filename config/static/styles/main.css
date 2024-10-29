@@ -31,8 +31,6 @@
     width: 100%;
     min-height: 100vh;
     line-height: 1.5;
-    color: var(--color-text);
-    background-color: var(--color-bg);
 }
 
 .marquee {
@@ -118,9 +116,7 @@
     width: calc(var(--size) / 2.5);
 }
 
-
-.marquee,
-.marquee__group {
+.marquee, .marquee__group {
     gap: calc(var(--gap) / 2);
 }
 

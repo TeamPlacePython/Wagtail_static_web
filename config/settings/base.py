@@ -1,6 +1,7 @@
 import os
 
 import pymysql
+import warnings
 
 from config import BASE_DIR, env
 
@@ -73,7 +74,11 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "config.wsgi.application"
 
-
+warnings.filterwarnings(
+    "ignore",
+    "MySQL does not support unique constraints with conditions",
+    Warning,
+)
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
