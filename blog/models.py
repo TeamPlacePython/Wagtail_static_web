@@ -49,7 +49,7 @@ class BlogIndexPage(Page):
         )
         page = request.GET.get("page", 1)
 
-        paginator = Paginator(posts, 6)
+        paginator = Paginator(posts, 5)
         try:
             posts = paginator.page(page)
         except PageNotAnInteger:
