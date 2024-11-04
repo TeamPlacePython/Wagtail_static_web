@@ -2,9 +2,6 @@
 /media/
 *.sqlite3
 
-data.json
-media.zip
-
 # Python and others
 __pycache__
 *.pyc

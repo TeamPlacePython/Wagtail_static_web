@@ -1,4 +1,5 @@
 from .base import *
+from .base import env
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -9,7 +10,9 @@ SECRET_KEY = (
 )
 
 # SECURITY WARNING: define the correct hosts in production!
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = env.list(
+    "DJANGO_ALLOWED_HOSTS", default=["localhost", "0.0.0.0", "127.0.0.1"]
+)
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 

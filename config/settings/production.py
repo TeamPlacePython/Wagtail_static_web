@@ -1,5 +1,5 @@
 """
-Project: mysite
+Project: web.laurentjouron.dev
 
 Production configuration.
 
@@ -25,9 +25,7 @@ DEBUG = False
 # It’s a security measure to prevent HTTP Host header attacks, which are possible even
 # with many seemingly secure web server configurations.
 # https://docs.djangoproject.com/en/5.1/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = env.list(
-    "DJANGO_ALLOWED_HOSTS", default=["web.laurentjouron.dev"]
-)
+ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=["localhost"])
 
 # DATABASE:
 # A dictionary containing the settings for all databases to be used with Django.
@@ -38,7 +36,7 @@ ALLOWED_HOSTS = env.list(
 # - POSTGRESQL: postgres://USER:PASSWORD@HOST:PORT/DB_NAME (with psycopg driver)
 # - MYSQL: mysql://USER:PASSWORD@HOST:PORT/DB_NAME (with mysqlclient driver)
 # - SQLITE: sqlite:///FILE_NAME (driver included by default in Python)
-DATABASES = {"default": env.db("DJANGO_DATABASE_URL")}
+DATABASES = {"default": env.db("DATABASE_URL")}
 
 # CONN_MAX_AGE is used in a Django production configuration to set how long database connections are reused,
 # which improves performance by reducing the overhead of creating new connections for each request.
@@ -143,7 +141,7 @@ globals().update(**EMAIL_CONFIG)
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-from-email
 DEFAULT_FROM_EMAIL = env(
     "DJANGO_DEFAULT_FROM_EMAIL",
-    default="mysite <noreply@eu.pythonanywhere.com>",  # type: ignore
+    default="mysite <noreply@web.laurentjouron.dev>",  # type: ignore
 )
 
 # The SERVER_EMAIL variable defines the email address used to send error or alert messages originating from the Django server,
@@ -213,4 +211,4 @@ LOGGING = {
 
 # Base URL to use when referring to full URLs within the Wagtail admin backend -
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
-WAGTAILADMIN_BASE_URL = env("DJANGO_WAGTAILADMIN_BASE_URL")
+WAGTAILADMIN_BASE_URL = env("WAGTAILADMIN_BASE_URL")

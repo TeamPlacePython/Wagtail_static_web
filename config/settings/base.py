@@ -5,6 +5,10 @@ from config import BASE_DIR, env
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# ALLOWED_HOSTS:
+# https://docs.djangoproject.com/fr/5.1/ref/settings/#allowed-hosts
+ALLOWED_HOSTS = []
+
 # Application definition
 INSTALLED_APPS = [
     "home",
