@@ -87,10 +87,10 @@ ___________
   <tr>
     <td align="center">
       <a href="https://github.com/LaurentJouron">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlW-w7O7g3hQTw8qcIAy3LCRhiHg5tUPfvVg&usqp=CAU"
+        <img src="https://raw.githubusercontent.com/LaurentJouron/LaurentJouron.github.io/main/ressources/img/logo/ikigai.png"
           width="100px;"/><br />
         <sub><b>Laurent Jouron</b></sub></a><br />
-      <a href="https://laurentjouron.github.io/" title="Étudiant">🈸</a>
+      <a href="https://www.laurentjouron.web/" title="Étudiant">🈸</a>
       <a href="https://github.com/LaurentJouron/Wagtail_static_website" title="Codeur de l'application">💻</a>
     </td>
   </tr>
