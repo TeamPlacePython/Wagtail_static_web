@@ -81,7 +81,7 @@ Démarrer le serveur de développement de Django avec
 ___________
 
 
-<h1 align="center">Auteur et collaborateurs</h1>
+<h1 align="center">Auteur</h1>
 
 <table>
   <tr>
