@@ -90,7 +90,7 @@ ___________
         <img src="https://raw.githubusercontent.com/LaurentJouron/LaurentJouron.github.io/main/ressources/img/logo/ikigai.png"
           width="100px;"/><br />
         <sub><b>Laurent Jouron</b></sub></a><br />
-      <a href="https://www.laurentjouron.web/" title="Étudiant">🈸</a>
+      <a href="https://www.laurentjouron.dev/" title="Étudiant">🈸</a>
       <a href="https://github.com/LaurentJouron/Wagtail_static_website" title="Codeur de l'application">💻</a>
     </td>
   </tr>
