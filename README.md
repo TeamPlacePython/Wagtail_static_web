@@ -59,7 +59,7 @@ ___________
 <h1 align="center">Installation du site </h1>
 
 Pour commencer il faut cloner le projet grâce à l'url suivante :
-  * ``git clone https://github.com/LaurentJouron/Wagtail_static_website.git``
+  * ``git clone https://github.com/TeamPlacePython/Wagtail_static_web.git`
 
 Il faut se déplacer dans le dossier:
   * ``cd Wagtail_static_website``
